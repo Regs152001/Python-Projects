@@ -1,0 +1,65 @@
+import turtle
+t = turtle.Screen() #background color of the window
+t.bgcolor("white")
+t = turtle.Turtle()
+
+#outline of the circle
+t.color("white") #Use to set the color of the turtle 
+t.right(90)
+t.forward(200)
+t.left(90)
+t.color("black")
+t.circle(200)
+
+#Now creating the smaller black circle
+t.color("white")
+t.left(90)
+t.forward(400)
+t.color("black")
+t.fillcolor("black")
+t.begin_fill()
+t.left(90)
+t.circle(100)
+t.end_fill()
+
+#Now black filling color in bigger semicircle
+t.fillcolor("black")
+t.begin_fill()
+t.left(90)
+t.forward(400)
+t.left(90)
+t.circle(200,180)
+t.end_fill()
+
+#Now creating smaller circle
+t.left(90)
+t.forward(200)
+t.color("white")
+t.fillcolor("white")
+t.begin_fill()
+t.right(90)
+t.circle(99)
+t.end_fill()
+
+#Now creating the white eye
+t.color("black")
+t.right(90)
+t.forward(75)
+t.right(90)
+t.fillcolor("white")
+t.begin_fill()
+t.circle(25)
+t.end_fill()
+
+#Now creating the black eye
+t.right(90)
+t.forward(75)
+t.color("white")
+t.forward(75)
+t.right(90)
+t.fillcolor("black")
+t.begin_fill()
+t.circle(25)
+t.end_fill()
+
+turtle.done()
